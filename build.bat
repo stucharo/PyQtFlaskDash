@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed dnv-client.py
