@@ -12,8 +12,7 @@ def create_app():
         app.register_blueprint(routes.main_bp)
 
         # Import Dash application
-        from application.dash.demo import Add_Demo1, Add_Demo2
-        app = Add_Demo1(app)
-        app = Add_Demo2(app)
+        from application.dash import dash_factory
+        dash_factory(app)
 
         return app
